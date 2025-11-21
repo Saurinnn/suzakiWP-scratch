@@ -80,7 +80,7 @@ list-style: none;
   background-color: #9CD7F6;
   width: 450px;
   height: 60px;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
 }
 
 .my-cover-text02{
@@ -103,7 +103,7 @@ list-style: none;
   background-color: #E38FFD;
   width: 650px;
   height: 60px;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
 }
 
 .my-cover-text03{
