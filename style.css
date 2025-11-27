@@ -197,6 +197,11 @@ list-style: none;
   margin: 0 auto;
 }
 
+/*表示切替
+.announce-area{
+  display: none;
+}*/
+
 .announce-title{
   background-color: #D04FF7;
   height: fit-content;
@@ -240,16 +245,90 @@ list-style: none;
     50% { opacity: 0; }
   }
 
+/*お知らせ*/
+.news-section{
+  padding: 50px 0;
+}
+
 /*あとで消す*/
 .news-section img{
-  width: 100%;
-  margin: 50px auto;
+  width: 980px;
+  margin: 0 auto;
 }
 /*ここまで*/
 
 /*About us*/
 .about-container{
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #000;
+  padding: 150px 0;
+}
+
+.about-box{
+  width: 980px;
+  margin: 50px auto;
+}
+
+.about-content{
+  display: flex;
+  }
+  
+.about-article h3{
+  color: #D04FF7;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.about-textbox{
+  display: flex;
+  }
+
+.text-num{
+  color: #fff;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 128px;
+  line-height: 1;
+}
+
+.text-article{
+  color: #fff;
+  font-size: 20px;
+  width: 500px;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.about-image-right{
+  margin-left: 30px;
+}
+
+.about-image-left{
+  margin-right: 30px;
+}
+
+.about-image img{
+  width: 300px;
+  height: auto;
+}
+
+/*about02*/
+.about02-container{
+  height: 800px;
+  position: relative;
+}
+
+.background02{
+  background-image: url('images/e-sport.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ←ここで固定表示 */
+  position: absolute; /* wrap の中で配置 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
