@@ -1,46 +1,59 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const speedMs = 100; // 1文字あたり0.1秒
-  const targets = document.querySelectorAll('.announce-text');
+  const speedMs = 10;
+  const texts = document.querySelectorAll('.announce-text');
 
-  // 元のテキストを data-text に保存して空にする
-  targets.forEach(el => {
-    const fullText = el.textContent.trim();
-    el.dataset.text = fullText;  // 保存
-    el.textContent = '';         // 初期は非表示
+  // テキストを data-text に保持し、初期化
+  texts.forEach(el => {
+    el.dataset.text = el.textContent.trim();
+    el.textContent = '';
   });
 
-  // IntersectionObserver：announce-list が見えたら発火
+  // IntersectionObserver（.announce-list が見えたら開始）
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const el = entry.target.querySelector('.announce-text');
-        startTyping(el);
-        observer.unobserve(entry.target); // 一度だけ
+        startSequentialTyping(texts);  // ★順番に実行
+        observer.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.2,             // 要素の20%が見えたら発火
-    rootMargin: "0px 0px -10% 0px" // 画面にしっかり入ってから発火
+    threshold: 0.2,
+    rootMargin: "0px 0px -10% 0px"
   });
 
-  document.querySelectorAll('.announce-list').forEach(list => {
-    observer.observe(list);
-  });
+  observer.observe(document.querySelector('.announce-list'));
 
-  // 一文字ずつ表示する関数
-  function startTyping(el) {
-    const str = el.dataset.text;  // 保存した元テキストを取得
+  // ★複数の .announce-text を順番に処理する関数
+  function startSequentialTyping(elements) {
+    let index = 0;
+
+    const next = () => {
+      if (index >= elements.length) return; // 全部終わり
+
+      startTyping(elements[index], () => {
+        index++;
+        next(); // ★終了後に次を実行
+      });
+    };
+
+    next(); // 最初を開始
+  }
+
+  // ★単体のタイピング（完了時 callback を実行）
+  function startTyping(el, callback) {
+    const str = el.dataset.text;
     el.textContent = '';
     el.classList.add('typing');
 
-    let index = 0;
+    let i = 0;
     const timer = setInterval(() => {
-      if (index < str.length) {
-        el.textContent += str.charAt(index);
-        index++;
+      if (i < str.length) {
+        el.textContent += str.charAt(i);
+        i++;
       } else {
         clearInterval(timer);
         el.classList.remove('typing');
+        if (callback) callback(); // ★次を開始
       }
     }, speedMs);
   }
