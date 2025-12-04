@@ -455,3 +455,148 @@ z-index: 0;
   width: 143px;
   height: 151px;
 }
+
+
+/*--- レスポンシブ ---*/
+@media screen and (max-width: 900px) { 
+  .top-video{
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .my-cover-text03{
+    width: 90%;
+    }
+
+
+  .announce-area{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-content{
+    display: block;
+    }
+  .about-box{
+    width: 100%;
+    }
+
+    .text-article{
+      width: 50%;
+      }
+    .suzaki-character-box{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) { 
+  .logo{
+    display: none;
+  }
+
+  .my-cover-area{
+    top: 25%;
+    left: 5%;
+  }
+
+  .my-cover-text01 h2,
+  .my-cover-text02 h2{
+    font-size: 18px;
+    left: 20px;
+  }
+
+  .my-cover-text01 .text01-back{
+    width: 200px;
+    height: 25px;
+  }
+ 
+  .my-cover-text02 .text02-back{
+    width: 300px;
+    height: 25px;
+  }
+
+  .my-cover-text01 h2{
+    position: absolute;
+    text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+    top: -8px;
+    left: 15px;
+  }
+
+  .my-cover-text02 h2{
+    position: absolute;
+    text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+    top: -8px;
+    left: 15px;
+  }
+
+  
+
+  .my-cover-text03{
+    width: 90%;
+    font-size: 12px;
+    padding: 20px 30px;
+    }
+
+    .my-cover-info{
+      background-color: #D04FF7;
+      border-radius: 10px;
+      color: #fff;
+      width: 80%;
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .my-cover-info h3{
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+    }
+    
+    .my-cover-info p{
+      text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+    }
+    
+
+    .my-title{
+      font-size: 40px;
+      font-family: "Exo", sans-serif;
+      font-weight: 300;
+      color: #fff;
+    }
+    
+    .my-subtitle{
+      color: #E38FFD;
+      font-size: 14px;
+      padding-left: 20px;
+    }
+
+    .about-article h3{
+      font-size: 28px;
+    }
+
+    .text-num{
+      font-size: 96px;
+    }
+
+    .text-article{
+      width: 100%;
+    }
+
+    .suzaki-textbox h3{
+      font-size: 28px;
+    }
+
+    .suzaki-img{
+      width: 250px;
+    }
+
+    .suzaki-character img{
+      width: 71px;
+      height: 75px;
+    }
+}
