@@ -456,6 +456,11 @@ z-index: 0;
   height: 151px;
 }
 
+/*Office*/
+.office-contents{
+  padding: 150px 0;
+}
+
 
 /*--- レスポンシブ ---*/
 @media screen and (max-width: 900px) { 
