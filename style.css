@@ -458,7 +458,20 @@ z-index: 0;
 
 /*Office*/
 .office-contents{
+  width: 100%;
   padding: 150px 0;
+}
+
+.office-image{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.office-image img{
+  width: 400px;
+  height: auto;
 }
 
 
