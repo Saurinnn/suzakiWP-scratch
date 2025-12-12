@@ -57,4 +57,21 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, speedMs);
   }
+
+  const images = document.querySelectorAll(".my-cover-text01, .my-cover-text02, .my-cover-text03, .my-cover-info, .my-title-area, .about-article01, .about-image-right01, .about-image-left02, .about-article02, .slide-left-text, .slide-rigit-img, .slide-left-img, .slide-right-text, .inquire-contents,.inquire-text,.inquire-button,.inquire-tel");
+
+  const observer02 = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target); // 一度表示したら監視を解除
+      }
+    });
+  }, {
+    threshold: 0.1 // 画像の10％が見えたら発火
+  });
+
+  images.forEach(img => {
+    observer02.observe(img);
+  });
 });

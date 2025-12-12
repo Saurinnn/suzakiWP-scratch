@@ -134,6 +134,65 @@ list-style: none;
   text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
 }
 
+/* 表示されたときに付与されるクラス */
+.my-cover-text01{
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-cover-text02{
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-cover-text03{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-cover-info{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-title-area{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-cover-text01.fade-in {
+opacity: 1;
+transform: translateX(0);
+}
+
+.my-cover-text02.fade-in {
+transition-delay: 1s;
+opacity: 1;
+transform: translateX(0);
+}
+
+.my-cover-text03.fade-in {
+  transition-delay: 2s;
+  opacity: 1;
+  transform: translateY(0);
+  }
+
+  .my-cover-info.fade-in {
+    transition-delay: 2s;
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+  .my-title-area.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 /*Newsエリア*/
 .my-news{
   height: auto;
@@ -319,6 +378,30 @@ list-style: none;
   height: auto;
 }
 
+/* 表示されたときに付与されるクラス */
+.about-article01,.about-image-left02{
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.about-article01.fade-in,.about-image-left02.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  }
+
+.about-image-right01,.about-article02{
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.about-image-right01.fade-in,.about-article02.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  }
+
+
 /*about02*/
 .about02-container{
   padding: 200px 0;
@@ -443,6 +526,29 @@ z-index: 0;
   z-index: 10;         
 }
 
+/* 表示されたときに付与されるクラス */
+.slide-left-text,.slide-left-img{
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.slide-left-text.fade-in,.slide-left-img.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  }
+
+.slide-rigit-img,.slide-right-text{
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.slide-rigit-img.fade-in,.slide-right-text.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  }
+
 /*キャラ*/
 .suzaki-character{
   display: flex;
@@ -556,7 +662,7 @@ z-index: 0;
 
 .inquire-text{
   background-color: rgb(0, 0, 0,0.7);
-  width: 100%;
+  width: 837px;
   margin: 0 auto;
   font-size: 16px;
   color: #fff;
@@ -585,6 +691,18 @@ z-index: 0;
   color: #fff;
   text-align: center;
   font-weight: 700;
+  }
+
+/*---クラスの付与---*/
+.inquire-contents,.inquire-text,.inquire-button,.inquire-tel{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.inquire-contents.fade-in,.inquire-text.fade-in,.inquire-button.fade-in,.inquire-tel.fade-in {
+  opacity: 1;
+  transform: translateY(0);
   }
 
 /*--- レスポンシブ ---*/
