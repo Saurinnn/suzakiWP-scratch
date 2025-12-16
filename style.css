@@ -801,12 +801,22 @@ z-index: 0;
         height: 151px;
       }
 
+    /*オフィス*/
+    .office-image{
+      width: 90%;
+    }
+
+    .office-info{
+      width: 90%;
+    }
+
     .inquire-contents{
       width: 100%;
       }
 
     .inquire-text{
       width: 90%;
+      padding: 30px 0;
       }
 }
 
