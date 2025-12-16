@@ -729,6 +729,12 @@ z-index: 0;
     object-fit: cover;
     overflow: hidden;
   }
+
+  .my-cover-area{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
   
   .text01-back{
     width: 70%;
