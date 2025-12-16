@@ -716,9 +716,19 @@ z-index: 0;
     overflow: hidden;
   }
   
+  .text01-back{
+    width: 70%;
+    }
+
+  .text02-back{
+    width: 90%;
+    }
+  
+  
   .my-cover-text03{
     width: 90%;
     }
+  
 
 
   .announce-area{
@@ -809,6 +819,13 @@ z-index: 0;
     .office-info{
       width: 90%;
     }
+
+    .map iframe{
+      width: 80%;
+      height: 300px;
+    }
+
+    /*お問い合わせ*/
 
     .inquire-contents{
       width: 100%;
