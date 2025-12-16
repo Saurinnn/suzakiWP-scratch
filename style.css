@@ -727,19 +727,87 @@ z-index: 0;
     margin: 0 auto;
   }
 
-  .about-content{
-    display: block;
+  .my-title-area{
+    width: 90%;
     }
-  .about-box{
+
+    .news-section img{
+      width: 90%;
+     }
+
+     /*About us*/
+  
+    .about-box{
     width: 100%;
+    }
+    .about-article{
+      text-align: center;
+      }
+
+    .about-textbox{
+      justify-content: center;
+    }
+
+    .about-image-right{
+      margin-left: 0;
+    }
+    .about-image-right img{
+      margin: 0 auto;
+
+    }
+    .about-image-left{
+      margin-right: 0;
+    }
+    .about-image-left img{
+      margin: 0 auto;
+    }
+
+    .about01{
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    .about02{
+      flex-direction: column-reverse;
+    }
+
+    /*真ん中パララックス*/
+    .about02-wrapper{
+      background-color: rgb(255, 255, 255,0.7);
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+    }
+
+    /*スザキコンテンツ*/
+    .suzaki-textbox{
+      width: 90%;
     }
 
     .text-article{
       width: 50%;
       }
-    .suzaki-character-box{
+    
+      .suzaki-character{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+    
+      
+      .suzaki-character img{
+        width: 143px;
+        height: 151px;
+      }
+
+    .inquire-contents{
       width: 100%;
-    }
+      }
+
+    .inquire-text{
+      width: 90%;
+      }
 }
 
 @media screen and (max-width: 540px) { 
