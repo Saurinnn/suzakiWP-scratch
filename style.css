@@ -168,12 +168,6 @@ list-style: none;
   transition: opacity 2s ease,transform 2s ease; 
 }
 
-.my-title-area{
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 2s ease,transform 2s ease; 
-}
-
 .my-cover-text01.fade-in {
 opacity: 1;
 transform: translateX(0);
@@ -197,10 +191,6 @@ transform: translateX(0);
     transform: translateY(0);
     }
 
-  .my-title-area.fade-in{
-    opacity: 1;
-    transform: translateY(0);
-  }
 
 /*Newsエリア*/
 .my-news{
@@ -257,6 +247,18 @@ transform: translateX(0);
   font-size: 24px;
   padding-left: 20px;
 }
+
+.my-title-area{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 2s ease,transform 2s ease; 
+}
+
+.my-title-area.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /*アナウンスエリア*/
 .announce-area{
@@ -719,6 +721,96 @@ z-index: 0;
   transform: translateY(0);
   }
 
+ /*よくある質問*/
+ .qa-content{
+  width: 100%;
+  background-color: #000;
+  height: 1000px;
+  }
+
+.qa-title{
+  margin: 0 auto;
+  width: 40%;
+  padding: 100px 0;
+  position: relative;
+}
+
+.qa-title-back{
+  background-color: #9CD7F6;
+  width: 100%;
+  height: 60px;
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+.qa-text01{
+  color: rgb(255, 255, 255,0.6);
+  font-family: "DotGothic16", sans-serif;
+  font-size: 64px;
+  position: absolute;
+  top: 40px;
+}
+
+.qa-text02{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+  position: absolute;
+  top: 100px;
+  left: 30px;
+
+}
+
+.qa-mytitle-text{
+  top: 70px;
+}
+
+.qa-my-title{
+  font-size: 48px;
+  font-weight: 400;
+
+}
+
+/*質問→B型事業所とは*/
+.typeB-content{
+  width: 60%;
+  margin: 50px auto;
+  }
+
+.typeB-exp01{
+  width: 100%;
+  display: flex;
+}
+
+.typeB-exp01-img{
+  width: 30%;
+}
+
+.typeB-exp01-img img{
+  width: 185px;
+  height: 256px;
+}
+
+.typeB-exp01-text{
+  width: 70%;
+  color: #fff;
+}
+
+.typeB-exp01-text p{
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.typeB-exp01-text h3{
+  font-size: 20px;
+  line-height: 1.6;
+  text-decoration:underline;
+  text-decoration-color: #D04FF7;
+  }
+
+
+
 /*--- レスポンシブ ---*/
 @media screen and (max-width: 900px) {
   .top-video{
@@ -1098,3 +1190,5 @@ z-index: 0;
         font-size: 24px;
         }
 }
+
+
