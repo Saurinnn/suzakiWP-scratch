@@ -952,7 +952,7 @@ z-index: 0;
 
     .announce-list{
       font-size: 14px;
-      height: auto;
+      height: 260px;
     }
 
 
@@ -995,6 +995,7 @@ z-index: 0;
       }
 
       .about-image-right,.about-image-left{
+        margin: 0 auto;
         width: 70%;
         height: auto;
         }
