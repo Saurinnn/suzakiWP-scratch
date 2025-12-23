@@ -774,7 +774,8 @@ z-index: 0;
 /*質問→B型事業所とは*/
 .typeB-content{
   width: 60%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
   }
 
 .typeB-exp01{
@@ -811,7 +812,8 @@ z-index: 0;
 
   .typeB-exp02{
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 50px 0;
   }
 
   .typeB-exp02-title{
@@ -826,7 +828,7 @@ z-index: 0;
     font-size: 40px;
   }
 
-  .target-text{
+  .line01{
     border-bottom: 2px dotted #fff;
   }
     
@@ -851,7 +853,7 @@ z-index: 0;
     left: 20px;
   }
 
-  .target-exp{
+  .exp01{
     width: 80%;
     margin: 0 auto;
     color: #fff;
@@ -859,11 +861,44 @@ z-index: 0;
     padding: 20px 0;
   }
 
+  .available{
+    padding-top: 30px;
+  }
+
+  .available-back{
+    background-color: #9CD7F6;
+    width: 130px;
+    }
+
   .typeB-exp02-text{
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    line-height: 1.6;
+    padding: 20px 0;
   }
+
+/*お悩み*/
+.problem-box{
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.problem-title h3{
+  font-size: 24px;
+  line-height: 1.6;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-decoration:underline;
+  text-decoration-color: #D04FF7;
+}
+
+.fireworks{
+  width: 186px;
+  height: 186px;
+}
 
 
 /*--- レスポンシブ ---*/
