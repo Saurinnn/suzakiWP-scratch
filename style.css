@@ -880,7 +880,7 @@ z-index: 0;
 
 /*お悩み*/
 .problem-box{
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -898,6 +898,10 @@ z-index: 0;
 .fireworks{
   width: 186px;
   height: 186px;
+}
+
+.fireworks-flex{
+  justify-content: space-evenly;
 }
 
 
