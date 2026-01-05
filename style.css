@@ -885,6 +885,16 @@ z-index: 0;
   padding: 50px 0;
 }
 
+.problem-box02{
+  border-bottom: 2px dotted #fff !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 50px !important;
+}
+
+.problem-box03{
+  border-bottom: none !important;
+}
+
 .problem-title h3{
   font-size: 24px;
   line-height: 1.6;
