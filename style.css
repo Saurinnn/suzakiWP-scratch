@@ -1050,6 +1050,15 @@ z-index: 0;
       padding: 30px 0;
       }
 
+      /*FAQページ*/
+      .qa-title{
+        width: 70%;
+        }
+      
+      .typeB-content{
+        width: 90%;
+        }
+
 }
 
 @media screen and (max-width: 540px) { 
@@ -1293,6 +1302,185 @@ z-index: 0;
       .inquire-button p{
         font-size: 24px;
         }
+
+    /*FAQページ*/
+    .qa-title{
+      width: 90%;
+      }
+    
+    .qa-title-back{
+      width: 100%;
+      height: 30px;
+      }
+    
+    .qa-text01{
+      font-size: 48px;
+      top: 50px;
+    }
+    
+    .qa-text02{
+      font-size: 24px;
+      top: 95px;
+    }
+    
+    .qa-mytitle-text{
+      top: 30px;
+    }
+    
+    .qa-my-title{
+      font-size: 18px;
+      font-weight: 400;
+    
+    }
+
+    /*質問→B型事業所とは*/
+.typeB-content{
+  width: 90%;
+  }
+
+.typeB-exp01{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.typeB-exp01-img{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.typeB-exp01-img img{
+  width: 185px;
+  height: 256px;
+}
+
+.typeB-exp01-text{
+  width: 100%;
+  color: #fff;
+}
+
+.typeB-exp01-text p{
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+.typeB-exp01-text h3{
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration:underline;
+  text-decoration-color: #D04FF7;
+  }
+
+  .typeB-exp02{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .typeB-exp02-title{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+    
+
+
+  .typeB-exp02 h3{
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .line01{
+    border-bottom: 2px dotted #fff;
+  }
+    
+
+  .target-title{
+    position: relative;
+    }
+
+  .target-title-back{
+    background-color: #E38FFD;
+  width: 111px;
+  height: 30px;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+
+  }
+  .target-title-text{
+    color: #fff;
+    text-shadow:2px 6px 3px rgb(0, 0, 0,0.5);
+    font-size: 24px;
+    position: absolute;
+    top: -8px;
+    left: 20px;
+  }
+
+  .exp01{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .available{
+    padding-top: 30px;
+  }
+
+  .available-back{
+    background-color: #9CD7F6;
+    width: 130px;
+    }
+
+  .typeB-exp02-text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 20px 0;
+  }
+  
+  /*お悩み*/
+.problem-box{
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.problem-box h3{
+  text-align: center;
+}
+
+.problem-box02{
+  border-bottom: 2px dotted #fff !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 50px !important;
+}
+
+.problem-box03{
+  border-bottom: none !important;
+}
+
+.problem-title h3{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-decoration:underline;
+  text-decoration-color: #D04FF7;
+}
+
+.fireworks{
+  width: 186px;
+  height: 186px;
+}
+
+.fireworks-flex{
+  justify-content: space-evenly;
+}
+
+    
 }
 
 
